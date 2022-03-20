@@ -4,6 +4,7 @@ const multer = require('multer')
 const router = express.Router()
 
 const { Produto, Categoria, Usuario, ProdutoFavoritoUsuario } = require('../models')
+const Servico = require('../models/Servico')
 
 const upload = multer({
   dest: 'public/uploads/'
@@ -21,6 +22,12 @@ router.use(verificaLoginAdmin)
 
 router.get('/', function(req, res) {
   res.render('admin/dashboard-admin')
+})
+
+router.get('/servicos', async function(req, res){
+  const obj = {
+    servicos: await Servico.findAll()
+  }
 })
 
 router.get('/produtos', async function(req, res) {

@@ -1,11 +1,10 @@
 {
   "development": {
-    "username": "root",
-    "password": "7dejulho@@",
-    "database": "petshop-express",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
+    "username": "root", 
+    "password": "7dejulho@@", 
+    "database": "petshop-express", 
+    "host": "127.0.0.1", 
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",

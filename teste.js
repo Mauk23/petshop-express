@@ -1,4 +1,4 @@
-const { Produto } = require('./models')
+/**const { Produto } = require('./models')
 
 const Inserir = [
   {
@@ -58,3 +58,5 @@ async function app() {
 }
 
 app()
+
+*/
